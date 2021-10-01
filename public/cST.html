@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。このページでは、模擬試験のストレージ分野の解答を掲載しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>ストレージ</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-17">
+    <h5>＜第18問＞<br>AWSを上でWEBアプリケーションを運用しています。このアプリケーションではユーザーの行動データをS3に蓄積しています。一部の行動データは予測不能なアクセスパターンを持っていることから、ストレージクラスが最適ではないことが判明しました。これを改善するのに最適なS3ストレージクラスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. S3 Standard</p>
+    <p class="plist">2. S3 Standard IA</p>
+    <p class="plist">3. S3 One-Zone-IA</p>
+    <p class="plist">4. S3 Intelligent Tiering</p><br>
+    <p>・1-Standardは、アクセス頻度の高いデータ向けです。</p>
+    <p>・2-Standard-IAは、長期保存、バックアップ、災害対策ファイルのデータストアに向きます。存続期間が長くあまり頻繁にアクセスされないデータ向けです。</p>
+    <p>・3- One Zone-IAは、アクセス頻度は低いが、必要に応じてすぐに取り出すことが必要なデータに適しています。One Zone-IAはひとつのAZにデータを保存するため、Standard
+        IAよりもコストを20%削減可能です。</p>
+    <p>・4-Intelligent Tieringは、アクセスパターンが変化したときに 4
+        つのアクセス階層の間でオブジェクトを移動することで、自動的にコストを削減する唯一のクラウドストレージクラスです。高頻度アクセス用と低頻度アクセス用で階層を区別しています。</p>
+</div>
+<div class="module text-left" "="" id=" module-19">
+    <h5>＜第20問＞<br>あなたはApplication Load
+        Balancerに登録されたEC2インスタンス上でWebアプリケーションを運用しています。DNSはRoute53を利用しています。メインのWebサイトに障害が起きた際、ユーザーがアクセス可能なバックアップサイトを設置したいと考えています。次のうち適切な構成を選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. バックアップサイトにはS3の静的ホスティングを使用し、Route53のフェイルオーバールーティングポリシーを適用する。</p>
+    <p class="plist">2. バックアップサイトにはS3の静的ホスティングを使用し、Route53のレイテンシールーティングポリシーを適用する。</p>
+    <p class="plist">3. 別リージョンに設置した同一アプリケーションに対し、ELBのフェイルオーバールーティングを適用する。</p>
+    <p class="plist">4. メインサーバーからのリダイレクト先として、別リージョンに設置した同一アプリケーションを設定する。</p>
+    <br>
+    <p>・1-フェイルオーバールーティングを設定することで、メインサーバーの障害を検知した時点でS3の静的サイトへルーティングするようにできます。</p>
+    <p>・2-レイテンシールーティングはレイテンシーに基づいてトラフィックをルーティングするため、メインサーバーに障害が発生していなくてもS3へルーティングする可能性があります。</p>
+    <p>・3-ELBはリージョンを跨いだ冗長化に対応しません。</p>
+    <p>・4-メインサーバーに障害があった際にはメインサーバーが機能しないためリダイレクト処理を行うことはできません。</p>
+</div>
+<div class="text-white" id="resultcontent">
+    <div class="module text-left" "="" id=" module-0">
+<h5>＜第31問＞<br>ある会社が、非常に重要なデータをAmazonS3バケットにアップロードしました。管理者はデータの可用性を懸念しており、データを誤って削除しないように保護するための措置を講じる必要があります。データは引き続きアクセス可能な状態である必要があり、ユーザーはデータを削除できる必要があります。データの誤削除を防ぐ方法として適切なものを選択してください。
+</h5>
+<br>
+<h5>答え：<font color="red">2</font>
+</h5>
+<br>
+<p class="plist">1. S3バケットでデフォルト暗号化を有効にする。</p>
+<p class="plist">2. S3バケットでバージョニングとMFA削除を有効にする。</p>
+<p class="plist">3. S3バケット内のオブジェクトのライフサイクルポリシーを作成する。</p>
+<p class="plist">4. S3バケットにバケットポリシーを適用する。</p>
+<br>
+<p>・1-正しくありません。</p>
+<p>・2-バージョン管理が有効なバケットからオブジェクトを削除する前に、追加の認証を追加するため正解です。</p>
+<p>・3-この設問において、バケットポリシーは必要ありません。</p>
+<p>・4-ライフサイクルポリシーはデータを別のストレージクラスに移動しますが、削除を保護しません。</p>
+</div>
+<div class="module text-left" "="" id=" module-1">
+    <h5>＜第32問＞<br>プライベートS3バケットに保存されている複数のビデオファイルを一時的に顧客に共有する必要があります。顧客はAWSアカウントを持っていないため、許可された顧客のみがファイルにアクセスできるようにする必要があります。このアクセスを可能にする方法を選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. S3バケットのパブリック読み取りアクセスを有効化する。</p>
+    <p class="plist">2. 顧客のIPアドレスに対しセキュリティーグループで許可ルールを作成する。</p>
+    <p class="plist">3. 署名付きURLを発行し、顧客に配布する。</p>
+    <p class="plist">4. CloudFrontを使用し、認証ハッシュタグを用いてファイルを配布する。</p>
+    <br>
+    <p>・1-パブリック読み取りアクセスを有効にしても、コンテンツの配布を許可された顧客に制限することはできません。</p>
+    <p>・2-セキュリティグループはS3バケットには適用されません。</p>
+    <p>・3-事前に署名付きURLを発行し、オブジェクトをダウンロードするための期限付きのアクセス許可を付与することにより、オブジェクトを他のユーザーと共有できます。</p>
+    <p>・4-ハッシュタグはCloudFront認証メカニズムではないため、CloudFrontを使用することはできません。</p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第33問＞<br>あなたのチームは、ログファイルに対して分析ジョブを毎日実行することを計画しているため、ログファイル用のストレージが必要です。ログのサイズと数は不明であり、データは24時間のみ保持されます。最も費用効果の高いストレージクラスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. S3 One Zone IA</p>
+    <p class="plist">2. S3 Intelligent Tiering</p>
+    <p class="plist">3. S3 標準</p>
+    <p class="plist">4. S3 Glacier Deep Archive</p>
+    <br>
+    <p>・1-One Zone IAストレージクラスには、オブジェクトごとの最小容量料金（128 KB）とGBごとの取得料金があります。</p>
+    <p>・2-Intelligent Tieringは使用に追加料金がかかり、短期間の要件ではメリットがない可能性があるため、正しくありません。</p>
+    <p>・3-S3標準が短期ストレージソリューションの最良の選択です。この場合、ログのサイズと数は不明であり、この段階でアクセスパターンを完全に評価することは困難です。したがって、S3標準を使用すると、費用効果が高く、すぐにアクセスでき、オブジェクトごとの取得料金や最小容量料金がないため最適です。
+    </p>
+    <p>・4-Glacier Deep Archiveは検索料金がかかり、アーカイブからデータを取得するのに数時間かかるため不適切です。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第34問＞<br>あなたの会社は、AWSを使用して新しいWebベースのアプリケーションを開発しています。顧客にデータレコードへのアクセスを提供する新しい2層アプリケーションが展開されます。アプリケーションの応答性が高く、取得時間が最適化されていることが要件であり、その要件に適したパフォーマンスを提供できる永続的なデータストアを探しています。次のうち適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. Redisエンジンを搭載したElastiCache</p>
+    <p class="plist">2. Kinesis Data Stream</p>
+    <p class="plist">3. Memcachedエンジンを搭載したElastiCache</p>
+    <p class="plist">4. マルチAZ構成のRDS</p>
+    <br>
+    <p>・1-ElastiCacheが提供するインメモリキャッシュを使用すると、読み取りが多い多くのアプリケーションワークロードや計算量の多いワークロードのレイテンシとスループットを大幅に向上させることができます。Redisは永続性を提供するため正しいです。
+    </p>
+    <p>・2-Kinesis Data Streamsは、データのストリームを処理するために使用されます。永続的なデータストアではありません。</p>
+    <p>・3-Memcachedエンジンを搭載したElastiCacheは、永続性を提供していません。</p>
+    <p>・4-RDSは、ElastiCacheなどのインメモリデータストアにより適した取得時間を最適化する必要があるため、最適ではありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-1">
+    <h5>＜第42問＞<br>中小企業はオンプレミスでITシステムを運用してきましたが、運用効率を高めるためにAWSクラウドへの移行を計画しています。ソリューションアーキテクトとして、静的コンテンツと動的コンテンツの両方を備えたフラッグシップアプリケーション向けの費用対効果の高いサーバーレスソリューションを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1.
+        RDSをデータベースとして使用して、EC2でWebアプリケーションの静的コンテンツと動的コンテンツの両方をホストし、CloudFrontは、地理的に分散したリージョンにコンテンツを配信するように設定する。</p>
+    <p class="plist">2. S3で静的コンテンツをホストし、動的コンテンツを生成するためにRDSでEC2を使用する。CloudFrontをEC2インスタンスの前に設定し、グローバルな配布に対応する。</p>
+    <p class="plist">3. S3でWebアプリケーションの静的コンテンツと動的コンテンツの両方をホストし、CloudFrontを使用して様々な国に配信する。</p>
+    <p class="plist">4.
+        S3で静的コンテンツをホストし、動的コンテンツを処理するサーバレスWebアプリケーションにDynamoDBとLambdaを使用する。CloudFrontをLambdaの前に配置することで様々な地域へ配信できる。
+    </p>
+    <br>
+    <p>・1-費用効果が高く最適なソリューションではありません。静的コンテンツはS3で費用対効果の高い方法で管理でき、EC2サーバーからコンテンツをフェッチする場合に比べてアクセスと配信が高速になるためです。</p>
+    <p>・2-EC2はサーバーレスサービスではありません。</p>
+    <p>・3-動的コンテンツのホストに適していないため、正しくありません。</p>
+    <p>・4-DynamoDBを備えたLambdaは、サーバーレスソリューションの正しい答えです。CloudFrontは、地理的に異なる場所に低レイテンシでコンテンツを配信することで、ユーザーエクスペリエンスの向上に役立ちます。S3は、Webアプリケーションの静的コンテンツを配布する費用対効果が高く高速な方法です。
+    </p>
+</div>
+<div class="module text-left" "="" id=" module-0">
+    <h5>＜第61問＞<br>企業は、ワークロードのライフサイクルを通じて大量の読み取りと書き込みを伴う分析ワークロードを実行します。同社の開発チームは、このワークロードをサポートするためのデータレイクとしてAmazonS3を使用することに関心を持っています。チームは、S3データ整合性モデルについてアドバイスするソリューションアーキテクトとしてあなたを雇いました。次のうち正しいものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. S3は、全てのGET、PUT、およびLIST操作で一貫性があり、最終的にはメタデータ情報を必要とする操作で一貫性がある。</p>
+    <p class="plist">2. S3は、全てのGET、PUT、およびLIST操作で一貫性がある。</p>
+    <p class="plist">3. S3は、全てのGET操作で一貫性があり、最終的にはPUTおよびLIST操作で一貫性がある。</p>
+    <p class="plist">4. S3は、全てのGETおよびPUT操作で一貫性があり、最終的にはLIST操作で一貫性を持つ。</p>
+    <br>
+    <p>・1-S3はGET、PUT、LIST操作、および変更オブジェクトタグ、ACL、またはメタデータの整合性が向上しました。したがって、このオプションは正しくありません。</p>
+    <p>・2-新しいオブジェクトの書き込みが成功した後、または既存のオブジェクトの上書きまたは削除後、後続の読み取りリクエストはすぐにオブジェクトの最新バージョンを受け取ります。S3はリスト操作にも強い一貫性を提供するため、書き込み後、変更を反映してバケット内のオブジェクトのリストをすぐに実行できます。
+    </p>
+    <p>・3-S3はすべてのGET、PUT、およびLIST操作で一貫性が高いため、これら2つのオプションは正しくありません。</p>
+    <p>・4-S3はすべてのGET、PUT、およびLIST操作で一貫性が高いため、これら2つのオプションは正しくありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-1">
+    <h5>＜第62問＞<br>金融サービス会社は、S3バケットに機密データを保存します。コンプライアンスガイドラインでは、ファイルをサーバー側の暗号化で保存する必要があります。使用する暗号化はAES-256である必要があり、会社はS3暗号化キーを管理することを望んでいません。次のうち適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. SSE-S3</p>
+    <p class="plist">2. SSE-KMS</p>
+    <p class="plist">3. SSE-C</p>
+    <p class="plist">4. クライアントサイド暗号化</p>
+    <br>
+    <p>・1-S3管理キー（SSE-S3）でサーバー側暗号化を使用して、各オブジェクトは強力な多要素暗号化を採用した一意のキーで暗号化されます。追加の保護手段として、定期的にローテーションするマスターキーを使用してキー自体を暗号化します。利用可能な最も強力なブロック暗号の1つであるAES-256を使用してデータを暗号化します。
+    </p>
+    <p>・2-SSE-S3と同様であり、キーがいつ誰によって使用されたかの監査証跡も提供します。さらに、暗号化キーを自分で作成および管理するオプションがあります。</p>
+    <p>・3-クライアントが管理している暗号化キーを用いて、S3は、オブジェクトにアクセスするときにディスクに書き込むときの暗号化と復号化を管理します。</p>
+    <p>・4-クライアントサイドのデータを暗号化し、暗号化されたデータをAmazonS3にアップロードできます。この場合、暗号化プロセス、暗号化キー、および関連ツールを管理する必要があります。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。このページでは、模擬試験のエッジ・ルーティング分野の解答を掲載しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>エッジ・ルーティング</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-1">
+    <h5>＜第2問＞<br>あなたの会社は画像配信アプリケーションを運用しています。画像配信を最適にするためにCloudFrontを利用していますが、コンテンツがエッジ側にない場合にどのような処理が発生するでしょうか。次の中で妥当なCloudFront処理を選択してください。
+    </h5>
+<br>
+    <h5>答え：<font color="red">2</font></h5>
+<br>
+    <p class="plist">1. コンテンツが保存された別のエッジへルーティングする。</p>
+    <p class="plist">2. CloudFrontがオリジンサーバへアクセスし、エッジにデータを取得する。</p>
+    <p class="plist">3. ユーザーに404エラーを返す</p>
+    <p class="plist">4. CloudFrontにリクエストをキャッシュし、データがエッジに来るまで待機する。</p>
+<br>
+    <p>・1-CloudFrontはユーザーに近いエッジから配信します。そのため、配信先のユーザーに適したエッジに配信キャッシュがない場合はオリジンサーバーからデータを取得します。
+    </p>
+    <p>・2-CloudFrontはユーザーから最も近いエッジロケーションにデータをキャッシュするコンテンツ配信ネットワーク（CDN）サービスであり、データ取得の待ち時間を短縮します。
+        データがエッジロケーションに存在しない場合は、データをオリジンサーバーから取得してから配信する可能性がありますが、次の配信以降はエッジロケーションにあるキャッシュを利用してデータが配信されます
+    </p>
+    <p>・3-CloudFrontにデータがキャッシュされていなくてもユーザーに404エラーを返すことはありません。配信先のユーザーに適したエッジに配信キャッシュがない場合はオリジンサーバーからデータを取得します。
+    </p>
+    <p>・4-CloudFrontはリクエストをキャッシュしてデータがエッジに来るまで待機することはありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第3問＞<br>AWS上に2つのEC2インスタンスを利用して構成したＷＥＢアプリケーションを構築しています。Route53を利用してランダムにそれぞれのサーバーにルーティングする設定を適応したいです。この要件を満たすルーティングポリシーを選定してください。
+    </h5>
+<br>
+    <h5>答え：<font color="red">2</font></h5>
+<br>
+    <p class="plist">1. 加重ルーティング</p>
+    <p class="plist">2. シンプル</p>
+    <p class="plist">3. レイテンシルーティング</p>
+    <p class="plist">4. フェイルオーバールーティング</p>
+<br>
+    <p>・1-加重ルーティングは指定した比率で複数のリソースにトラフィックをルーティングする場合に使用します。単一のドメイン名 (example.com) またはサブドメイン名
+        (acme.example.com)
+        に複数のリソースを関連付け、各リソースにルーティングされるトラフィックの数を選択できます。これは負荷分散や新しいバージョンのソフトウェアのテストなど、さまざまな目的に有用です。
+    </p>
+    <p>・2-Route 53 コンソールでシンプルルーティングポリシーを選択した場合は、複数のレコードを同じ名前と型で作成することはできませんが、同一レコードに複数の値 (複数の IP
+        アドレスなど) を指定することができます。そのため選択肢2が正解です。</p>
+    <p>・3-複数の AWS リージョンでアプリケーションがホストされている場合、ネットワークレイテンシーが最も低い AWS
+        リージョンに基づいてリクエストを処理することで、ユーザーのパフォーマンスを向上させることができます。</p>
+    <p>・4-フェイルオーバーのルーティングにより、リソースが正常な場合にリソースにトラフィックをルーティングできます。また、最初のリソースが正常でない場合は別のリソースにルーティングできます。
+    </p>
+</div>
+<div class="module text-left" "="" id=" module-11">
+    <h5>＜第12問＞<br>Route53を使用してZone ApexレコードをELBと関連付ける必要があります。次のうち適切なレコードを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. CNAMEレコード</p>
+    <p class="plist">2. ALIASレコード</p>
+    <p class="plist">3. NSレコード</p>
+    <p class="plist">4. MXレコード</p><br>
+    <p>・1-CNAMEレコードは、DNSクエリを任意のDNSレコードにリダイレクトできます。例えば、acme.example.com からzenith.example.com または acme.example.org
+        にクエリをリダイレクトするCNAMEレコードを作成できます。</p>
+    <p>・2-ALIASレコードを使うことで、ホストゾーン (Zone Apex) と同じ名前のエイリアスレコードを作成できます。</p>
+    <p>・3-NSレコードは、ドメインのゾーン情報を管理するDNSサーバを定義するため、Zone Apexレコードを登録する場合には使用しません。</p>
+    <p>・4-MXレコードは、メールサーバーの名前を指定します。</p>
+</div>
+<div class="module text-left" "="" id=" module-15">
+    <h5>＜第16問＞<br>あなたはAWSを利用したアプリケーション開発に携わっています。このアプリケーションを利用すると想定されるユーザーは世界中に分散しています。
+        そのため、ユーザーが地理的に近いリソースにルーティングされるようにする必要があります。この要件を満たすルーティングポリシーを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. 複数値回答ルーティングポリシー</p>
+    <p class="plist">2. レイテンシールーティング</p>
+    <p class="plist">3. 位置情報ルーティング</p>
+    <p class="plist">4. 地理的近接性ルーティングポリシー</p><br>
+    <p>・1-複数値回答ルーティングポリシーはランダムに選択された最大8つのレコードを使用してDNSクエリに応答することができます。</p>
+    <p>・2-レイテンシールーティングポリシーはレイテンシーに基づいたトラフィックのルーティングする場合に使用します。</p>
+    <p>・3-位置情報ルーティングポリシーはコンテンツをそれぞれの位置にローカライズして、ユーザーに適した言語で表示します。DNSとIPアドレスの位置情報に基づいたルーティングのため、リソースの近さを考慮しません。</p>
+    <p>・4-地理的近接性ルーティングポリシーを利用することで、リソースの場所に基づいてトラフィックをルーティングし、必要に応じてトラフィックをリソースから別の場所のリソースに移動するようにできます。</p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第28問＞<br>多層Webアプリケーションのアプリケーション層は、現在、一つのEC2インスタンスで2つのWebサービスをホストしています。Webサービスはそれぞれ、異なるポートでトラフィックを受信します。リクエストパスに基づいてトラフィックをサービスにルーティングするために必要なサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. CloudFront</p>
+    <p class="plist">2. CLB</p>
+    <p class="plist">3. ALB</p>
+    <p class="plist">4. Route53</p>
+    <br>
+    <p>・1-CloudFrontは、コンテンツのキャッシュに使用されます。カスタムオリジンへのリクエストパスに基づいてルーティングできますが、設問ではコンテンツキャッシュについて言及していないため不正解です。</p>
+    <p>・2-CLBでホストベースまたはパスベースのルーティングを使用することはできません。</p>
+    <p>・3-Application Load Balancerは、レイヤー7（HTTP / HTTPS）プロトコルデータを使用して転送を決定できるElastic
+        LoadBalancerの一種です。ALBは、パスベース（例：/indexなど）とホストベースのルーティング（例：example.com）の両方をサポートします。</p>
+    <p>・4-Amazon Route53はDNSサービスです。負荷分散に使用できますが、着信要求パスの情報に基づいてルーティングする機能はありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-0">
+    <h5>＜第56問＞<br>AWSは、グローバルインフラストラクチャの一部として多数のエッジロケーションを作成しました。次のうち、エッジロケーションを使用するメリットではないものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. エッジロケーションは、ファイルをアップロードする際のエンドユーザーエクスペリエンスを向上させるためにCloudFrontによって使用できる。</p>
+    <p class="plist">2. エッジロケーションは、CloudFrontがコンテンツを低レイテンシでグローバルに配信するために使用される。</p>
+    <p class="plist">3. エッジロケーションは、CloudFrontが最新の応答をキャッシュするために使用される。</p>
+    <p class="plist">4. CloudFrontは、エッジロケーションを使用してトラフィックを複数のインスタンスに分散し、レイテンシーを削減する。</p>
+    <br>
+    <p>・1-メリットとして正しいです。</p>
+    <p>・2-メリットとして正しいです。</p>
+    <p>・3-メリットとして正しいです。</p>
+    <p>・4-負荷を分散するために使用されるAWSサービスは、AWS Elastic Load Balancing（ELB）サービスです。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

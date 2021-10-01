@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。このページでは、模擬試験のデータベース分野の解答を掲載しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>データベース</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-0">
+				<h5>＜第1問＞<br>
+あなたは、1日あたり1000万人の顧客が利用する小売会社を経営しています。
+顧客から得られるデータをビジネスに利用するため、高速にクエリを実行できるデータウェアハウスが必要です。
+次のうち、要件に適したサービスを選択してください。
+                            </h5>
+			    <br>
+                            <h5>答え：<font color="red">1</font></h5>
+			    <br>
+                            <p class="plist">1. Redshift</p>
+                            <p class="plist">2. RDS</p>
+                            <p class="plist">3. ElastiCache</p>
+                            <p class="plist">4. Athena</p>
+			    <br>
+                            <p>・1-Redshiftは列指向アーキテクチャで、大量データの集計・分析に適したデータウェアハウスサービスです。
+                            </p>
+                            <p>・2-RDSは汎用性の高いデータベースですが、大量データの分析には不向きです。</p>
+                            <p>・3-ElastiCacheはインメモリデータベースのキャッシュサービスですが、設問においてキャッシュの利用では要件を満たせないため誤りです。
+</p>
+                            <p>・4-Athenaは、標準SQLを使用してAmazonS3のデータを簡単に分析できるインタラクティブなクエリサービスです。データウェアハウスではありません。
+</p>
+					
+				</div>
+<div class="module text-left" "="" id=" module-5">
+    <h5>
+        ＜第6問＞<br>
+        業務アプリケーションを開発中です。このアプリケーションのデータベースには、多くの業務データを頻繁に作成・更新・削除できる性能が求められます。また、格納されたデータからレポートを作成するため、複数テーブルを結合してデータ取得する予定です。加えて、今後のデータ増加量に備えデータベースのストレージを自動拡張する機能も求められています。これらの要求を満たすサービスはどれですか。
+    </h5>
+    <br>
+    <h5>
+        答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. DynamoDB</p>
+    <p class="plist">2. S3</p>
+    <p class="plist">3. Aurora</p>
+    <p class="plist">4. Redshift</p>
+    <br>
+    <p>・1-DynamoDBは、プライマリキーを使用してテーブル内の各アイテムを一意に識別し、セカンダリインデックスを使用してクエリの柔軟性を高めます。noSQLのためSQLを利用することはできません。
+    </p>
+    <p>・2-S3は、大容量のデータを格納できる耐久性の高いオブジェクトストレージサービスです。</p>
+    <p>・3-Auroraはマネージド型RDBです。頻繁にデータの更新・削除が行われるデータベースに向いており、SQLによるクエリも実行できます。また、Auroraはフルマネージドデータベースサービスのため、ストレージの自動拡張機能も備えています。
+    </p>
+    <p>・4-Redshiftは列指向アーキテクチャで、大量データの集計・分析に適したデータウェアハウスサービスです。</p>
+</div>
+<div class="module text-left" "="" id=" module-8">
+    <h5>＜第9問＞<br>EC2インスタンスとDynamoDBを利用してWebアプリケーションをホストし、ユーザーにサービスを提供しています。このサービスを利用しているユーザーから削除したはずのデータが表示されてしまうことがあると問い合わせを受けました。この問題を解決するために必要な対策を選択してください。
+    </h5><br>
+    <h5>答え：<font color="red">4</font>
+    </h5><br>
+    <p class="plist">1. DynamoDBストリームを利用する。</p>
+    <p class="plist">2. DynamoDBグローバルテーブルを利用する。</p>
+    <p class="plist">3. DynamoDB Accelerator (DAX)を利用する。</p>
+    <p class="plist">4. Consistent Readを有効化する。</p><br>
+    <p>・1-DynamoDBストリームは、DynamoDBのテーブルに対するデータ変更の履歴情報をイベントとして検出し、24時間保持する機能です。</p>
+    <p>・2-DynamoDBグローバルテーブルは、複数リージョンに配置されたデータベーステーブルでデータの整合性を保つ機能です。</p>
+    <p>・3-は、1秒あたり100万回単位のリクエストの応答時間を数ミリ秒で処理できるDynamoDB用インメモリキャッシュです。データを頻繁に参照する場合に使用することで高速な応答が可能になります。
+    </p>
+    <p>・4-DynamoDBには結果整合性モデルという特性があります。そのため、変更されたデータは時間が経てば正しく反映されますが、タイミングによっては変更が反映されていない状態で読み込まれます。Consistent
+        Readを有効化することにより読み取り一貫性を持たせることができます。</p>
+</div>
+<div class="module text-left" "="" id=" module-18">
+    <h5>＜第19問＞<br>世界的に利用されているWEBサービスを運用しています。このアプリケーションの可用性を高めるため、最適なエンドポイントにトラフィックをルーティングするようにしたいです。この要件に最適なサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. Global Accelerator</p>
+    <p class="plist">2. Cloud Front </p>
+    <p class="plist">3. Route53</p>
+    <p class="plist">4. DynamoDB DAX</p><br>
+    <p>・1-AWS Global
+        Acceleratorを使用しない場合、アプリケーションに到達するまでに多くのネットワークを経由しますが、使用することで2つのグローバルな静的パブリックIPが提供され、アプリケーションへの固定されたエントリポイントとして機能するため、アプリケーションへのパスを最適化できます。
+    </p>
+    <p>・2-CloudFrontはグローバル配信CDNサービスです。エッジにキャッシュされたコンテンツを配信しますが、最適なエンドポイントへトラフィックルーティングするものではありません。</p>
+    <p>・3-Route53はDNSサービスです。ルーティングポリシーは様々ありますが、グローバルに最適なエンドポイントへトラフィックルーティングするものではありません。</p>
+    <p>・4-DynamoDB DAXはDynamoDBのキャッシュサービスです。最適なエンドポイントへトラフィックルーティングするものではありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第34問＞<br>あなたの会社は、AWSを使用して新しいWebベースのアプリケーションを開発しています。顧客にデータレコードへのアクセスを提供する新しい2層アプリケーションが展開されます。アプリケーションの応答性が高く、取得時間が最適化されていることが要件であり、その要件に適したパフォーマンスを提供できる永続的なデータストアを探しています。次のうち適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. Redisエンジンを搭載したElastiCache</p>
+    <p class="plist">2. Kinesis Data Stream</p>
+    <p class="plist">3. Memcachedエンジンを搭載したElastiCache</p>
+    <p class="plist">4. マルチAZ構成のRDS</p>
+    <br>
+    <p>・1-ElastiCacheが提供するインメモリキャッシュを使用すると、読み取りが多い多くのアプリケーションワークロードや計算量の多いワークロードのレイテンシとスループットを大幅に向上させることができます。Redisは永続性を提供するため正しいです。
+    </p>
+    <p>・2-Kinesis Data Streamsは、データのストリームを処理するために使用されます。永続的なデータストアではありません。</p>
+    <p>・3-Memcachedエンジンを搭載したElastiCacheは、永続性を提供していません。</p>
+    <p>・4-RDSは、ElastiCacheなどのインメモリデータストアにより適した取得時間を最適化する必要があるため、最適ではありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第40問＞<br>あなたの企業は、Application Load
+        Balancerの背後にあるEC2インスタンスで実行される多層ソーシャルメディアアプリケーションを管理しています。インスタンスは、複数のアベイラビリティーゾーンにまたがるEC2 Auto
+        Scalingグループで実行され、AmazonAuroraデータベースを使用します。ソリューションアーキテクトとして、リクエストレートの定期的な急上昇に対してアプリケーションをより回復力のあるものにすることが求められています。次のうち適切なソリューションを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. AWS Sieldを利用する。</p>
+    <p class="plist">2. CloudFrontディストリビューションとAuroraレプリカを使用する。</p>
+    <p class="plist">3. Global Acceleratorを使用する。</p>
+    <p class="plist">4. Direct Connectを使用する。</p>
+    <br>
+    <p>・1-AWSShieldは、AWSで実行されているアプリケーションを保護するマネージド分散型サービス拒否（DDoS）保護サービスです。</p>
+    <p>・2-Auroraは、読み取り専用接続の負荷を、クラスター内にある数のAuroraレプリカに分散させることができます。Auroraレプリカは、可用性の向上にも役立ちます。最大15個のAuroraレプリカを、DBクラスターがAWSリージョン内にまたがるアベイラビリティーゾーン全体に分散できます。
+    </p>
+    <p>・3-Acceleratorは、ローカルまたはグローバルユーザーのアプリケーションの可用性とパフォーマンスを向上させるサービスです。これは、アプリケーションロードバランサー、ネットワークロードバランサー、Amazon
+        EC2インスタンスなど、単一または複数のAWSリージョン内のアプリケーションエンドポイントへの固定エントリポイントとして機能する静的IPアドレスを提供します。</p>
+    <p>・4-Direct Connectは、イントラネットとAmazonVPCの間で専用のプライベートネットワーク接続をするものです。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第45問＞<br>ある会社が最近、オンプレミスのデータセンターでデータベースの障害を経験しました。同社は現在、データの損失を最小限に抑え、すべてのトランザクションを少なくとも2つのノードに保存する、AWS上の信頼性の高いデータベースソリューションに移行したいと考えています。次のうちこの要件を満たすものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. RDS MySQL DBインスタンスを起動してから、別のアベイラビリティーゾーンにデータを同期的に複製するリードレプリカを作成する。</p>
+    <p class="plist">2. マルチAZ機能を有効化し、RDS MySQL DBインスタンスを起動し、データを同期的に複製する。</p>
+    <p class="plist">3. RDS MySQL DBインスタンスを起動してから、データを同期的に複製する別のリージョンにリードレプリカを作成する。</p>
+    <p class="plist">4. LambdaをトリガーしてデータをRDS MySQL DBインスタンスに同期的に複製するMySQL DBエンジンがインストールされたEC2インスタンスを起動する。</p>
+    <br>
+    <p>・1-データを同期的に複製するリードレプリカの作成について説明していますが、実際には、プライマリDBインスタンスに対して行われた更新はすべて非同期でリードレプリカにコピーされます。したがって正しくありません。</p>
+    <p>・2-RDSマルチAZ DBインスタンスをプロビジョニングすると、RDSは自動的にプライマリDBインスタンスを作成し、データを別のアベイラビリティーゾーンのスタンバイインスタンスに同期的に複製します。</p>
+    <p>・3-データを同期的に複製するリードレプリカの作成について説明していますが、実際には、プライマリDBインスタンスに対して行われた更新はすべて非同期でリードレプリカにコピーされます。したがって正しくありません。</p>
+    <p>・4-EC2インスタンスにデータベースをセットアップすることは、監視および管理する必要があるため信頼性に欠けます。</p>
+</div>
+<div class="module text-left" "="" id=" module-0">
+    <h5>＜第46問＞<br>米国、ヨーロッパ、アジアに施設を持つグローバルな製造会社は、調達ワークフローを最適化するために新しい分散アプリケーションを設計しています。1つの大陸で予約された注文は、1秒以内にすべてのAWSリージョンに表示されます。データベースは、短い目標復旧時間（RTO）でフェイルオーバーを容易にできる必要があります。次のうち最も費用対効果の高いソリューションとして推奨すべきものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. クロスリージョンリードレプリカを使用してPostgreSQL用のRDSをプロビジョニングする。</p>
+    <p class="plist">2. DynamoDBグローバルテーブルをプロビジョニングする。</p>
+    <p class="plist">3. クロスリージョンレプリカを使用して、MySQL用のRDSをプロビジョニングする。</p>
+    <p class="plist">4. Auroraグローバルデータベースをプロビジョニングする。</p>
+    <br>
+    <p>・1-フェイルオーバーの場合、プロセスは自動ではないため、リードレプリカを手動でスタンドアロンデータベースインスタンスに起動する必要があります。したがって、RTOが非常に高くなるため適していません。</p>
+    <p>・2-DynamoDBグローバルテーブルは、クロスリージョンに対応した機能を提供しますが、SQLベースのデータベースに付属するデータアクセスの柔軟性の一部が失われます。DynamoDBグローバルテーブルのアクティブ/アクティブ構成により、アプリケーションがそのリージョンのテーブルに書き込み、データが複製されて他のリージョンのテーブルの同期が維持されるため、フェイルオーバーの概念はありません。DynamoDBグローバルテーブルは、特定の要件においてAuroraグローバルデータベースよりもはるかにコストのかかるソリューションです。
+    </p>
+    <p>・3-フェイルオーバーの場合、プロセスは自動ではないため、リードレプリカを手動でスタンドアロンデータベースインスタンスに起動する必要があります。したがって、RTOが非常に高くなるため適していません。</p>
+    <p>・4-Auroraグローバルデータベースは、デフォルトのAuroraDBクラスターによって提供されるフェイルオーバーよりも包括的なフェイルオーバー機能を提供します。Auroraグローバルデータベースを使用することで、災害の計画と復旧をかなり迅速に行うことができます。(RTO:数分程度、RPO:秒単位)
+    </p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第58問＞<br>企業は、AmazonRDSでデータベースを少なくとも3年間ホストする必要があります。次のうち、最も費用効果の高いものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. リザーブドインスタンス 一部前払い</p>
+    <p class="plist">2. リザーブドインスタンス　前払いなし</p>
+    <p class="plist">3. オンデマンドインスタンス</p>
+    <p class="plist">4. スポットインスタンス</p>
+    <br>
+    <p>・1-3年間ホストするということからリザーブドインスタンスが最適となります。一部前払いオプションを使用すると、リザーブド期間中、インスタンスの割引時間料金が請求されます。</p>
+    <p>・2-前払いなしオプションは、前払いを必要とせず、期間中の割引時間料金を提供しますが、前払いありと比べて時間料金が高くなります。</p>
+    <p>・3-オンデマンドは費用効果の高いソリューションではありません。</p>
+    <p>・4-スポットインスタンスはEC2のオプションです。RDSにはスポットオプションはありません。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

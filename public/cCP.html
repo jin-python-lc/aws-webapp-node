@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。このページでは、模擬試験のコンピューティング分野の解答を掲載しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>コンピューティング</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-3">
+    <h5>＜第4問＞<br>あなたはバスの位置情報を利用したアプリケーションをAWSにホストしています。バスの位置情報データは定期的に配信され、Amazon
+        S3ストレージに蓄積されます。その後、このデータを利用してバスと顧客間の距離を計測して、アプリケーションに計算結果を返す処理を行います。この位置情報解析を自動で実施するための仕組みとして最適なものを選択してください。
+    </h5>
+<br>
+    <h5>答え：<font color="red">1</font></h5>
+<br>
+    <p class="plist">1. S3イベントをトリガーにしてLambda関数が処理を実行する。</p>
+    <p class="plist">2. Amazon Kinesis Streamsを利用したデータ変換処理</p>
+    <p class="plist">3. Amazon Kinesis Data Analyticsを利用したリアルタイムデータ分析</p>
+    <p class="plist">4. DynamoDB Streamにを利用したデータ処理</p>
+<br>
+    <p>・1-S3バケットにデータが保存されたイベントをトリガーとしてLambda関数を起動し、バスと顧客の距離計算処理を自動化することができます。</p>
+    <p>・2-Amazon Kinesis Data
+        Streamを利用することでストリーミングデータをリアルタイムで収集、処理、分析するアプリケーションを実装できますが、今回はS3のデータを解析するためリアルタイムデータを解析するサービスは不要です。
+    </p>
+    <p>・3-Amazon Kinesis Data
+        Analyticsはストリーミングデータの分析、実用的なインサイトの取得、ビジネスやお客様のニーズへのリアルタイムな対応を最も簡単に行えるサービスです。ストリーミングデータのリアルタイムな解析は今回の要件では求められていません。
+    </p>
+    <p>・4-今回はS3に保存されたデータを利用するため不要です。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第5問＞<br>EC2インスタンス間で高いネットワークスループットと低いネットワークレイテンシーの要件を実現するソリューションとして適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. Auto Scaling</p>
+    <p class="plist">2. クラスタープレイスメントグループ</p>
+    <p class="plist">3. スプレッドプレイスメントグループ</p>
+    <p class="plist">4. パーティションプレイスメントグループ</p>
+    <br>
+    <p>・1-自動スケーリングや予測スケーリングの機能を持つサービスです。</p>
+    <p>・2-クラスタープレイスメントグループは、単一のアベイラビリティーゾーン内のインスタンスを論理的にグループ化したものです。同じクラスタープレイスメントグループ内のインスタンスは、TCP/IP
+        トラフィックのフローあたりのスループット上限が高くなり、ネットワークの二分帯域幅の広い同じセグメントに配置されます。</p>
+    <p>・3-スプレッドプレイスメントグループは、それぞれに独自のネットワークおよび電源がある異なるラックに別々に配置できるインスタンスのグループです。インスタンスが同じラックを共有するときに発生する可能性のある､同時障害のリスクが軽減されます。
+    </p>
+    <p>・4-パーティションプレイスメントグループは、アプリケーションに関連するハードウェア障害の頻度を軽減するために役立ちます。パーティションプレイスメントグループを使用する場合、Amazon
+        EC2 は各グループをパーティションと呼ばれる論理的なセグメントに分割します。アプリケーション内でのハードウェア障害による影響を隔離できます。</p>
+</div>
+<div class="module text-left" "="" id=" module-7">
+    <h5>＜第8問＞<br>常にアクセス可能な社内共有ファイルシステムを設計中です。部署ごとにディレクトリを所有しており、システムのユーザーは自分の部署が所有するファイルだけにアクセスできるようにする必要があります。次のうち適切な設計方針を選択してください。
+    </h5><br>
+    <h5>答え：<font color="red">1</font>
+    </h5><br>
+    <p class="plist">1. EFSを使用し、ファイル単位でアクセスを制御する。</p>
+    <p class="plist">2. EFSを使用し、セキュリティグループによってアクセスを制御する。</p>
+    <p class="plist">3. S3を使用し、IAMによるアクセス制御を行う。</p>
+    <p class="plist">4. S3を使用し、ACLによるアクセス制御を行う。</p><br>
+    <p>・1-EFSは、EC2インスタンス間でファイル共有するサービスです。そのため、OS機能によるファイルへのアクセス制御が可能です。</p>
+    <p>・2-セキュリティグループによるディレクトリごとのアクセス制御は不可能です。</p>
+    <p>・3-S3でアクセス制御する場合はAPIコールが必要となるためディレクトリのアクセス制御は不可能です。</p>
+    <p>・4-S3はACLによるアクセス制御が可能ですが、ユーザーグループに基づいた制御は不可能です。</p>
+</div>
+<div class="module text-left" "="" id=" module-13">
+    <h5>＜第14問＞<br>Amazon API
+        Gatewayから受けたクエリを処理するサービスを設計しています。サービスへのリクエスト頻度は予測不可能であり、1秒あたり0から500を超える可能性があります。データベースに保持する必要のあるデータの合計サイズは現在1GB未満であり、将来の予測不可能な増加が見られます。Key-Value型のリクエストを使用してデータをクエリする予定です。
+        次のうち費用対効果の高い正しい組み合わせを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. Fargate + ECS </p>
+    <p class="plist">2. Lambda + DynamoDB</p>
+    <p class="plist">3. EC2 Auto Scaling + MySQL(Aurora)</p>
+    <p class="plist">4. EC2 + RDS </p><br>
+    <p>・1-FargateとECSによって、コンテナイメージのビルドが可能ですが、起動時のオーバーヘッドにより突発的なリクエストには対応できません。</p>
+    <p>・2-LambdaはEC2のAuto
+        Scalingよりも柔軟性が高く、予測不可能なリクエストへの対応力があります。また、Key-Value型のリクエストとあるためNoSQLデータベースであるDynamoDBが正解です。</p>
+    <p>・3-Auto Scalingはリクエスト単位でのスケーリングは不可能です。また、Lambdaと比べて費用がかかります。</p>
+    <p>・4-費用対効果が高いとは言えないため不正解です。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第39問＞<br>汎用SSDボリュームがアタッチされた一つののEC2インスタンス上で実行されているWebアプリケーションがあります。このEC2インスタンスはEBS最適化インスタンスを有効化できます。EBSのスループットが低下した場合に、パフォーマンスを向上させる手段として適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. インスタンスタイプを変更する。</p>
+    <p class="plist">2. EBSをプロビジョンドIOPS SSDに変更する。</p>
+    <p class="plist">3. EBSをマグネティックボリュームに変更する。</p>
+    <p class="plist">4. 他リージョンに汎用SSDボリュームを追加する。 </p>
+    <br>
+    <p>・1-EBS 最適化インスタンスを利用するとEBSボリュームに対してプロビジョンされたIOPSをEC2インスタンスで最大限に使用できるようになります。そのため、インスタンスタイプを変更するのは誤りです。</p>
+    <p>・2-プロビジョンドIOPS
+        SSD(io2ブロックExpress、io2、io1)は、io2ブロックExpressで64,000IOPS、io2、io1で16,000IOPS以上のスループット性能を持つため、パフォーマンス向上に適しています。
+    </p>
+    <p>・3-EBS マグネティックボリュームはハードディスクドライブ (HDD)
+        がベースになっており、データのアクセス頻度が低い場合か、またはパフォーマンスの一定性が最も重要でない場合に、比較的小さいデータセットのワークロードに使用できます。</p>
+    <p>・4-EBSは単一AZの単一インスタンスにのみアタッチできるため誤りです。</p>
+</div>
+<div class="module text-left" "="" id=" module-0">
+    <h5>＜第51問＞<br>日本の企業は、東京リージョンのEC2インスタンスでアプリケーションをホストしています。同社は米国に新しい支店を開設しましたが、米国のユーザーは待ち時間が長いことに不満を持っています。コストを削減しながら、米国のユーザーの待ち時間を短縮するために何をすべきでしょうか。適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. 米国にあるリージョンに新しいEC2インスタンスをデプロイする。</p>
+    <p class="plist">2. 米国で新しいデータセンターを構築し、ハイブリッドモデルを実装する。</p>
+    <p class="plist">3. 米国のユーザーにサービスを提供するための新しい米国ドメイン名を登録する。</p>
+    <p class="plist">4. AmazonConnectのレイテンシーベースのルーティングポリシーを適用する。</p>
+    <br>
+    <p>・1-米国ユーザーのレイテンシーを削減する方法は、米国に近い、または米国内のリージョンで新しいAmazon
+        EC2インスタンスをプロビジョニングするか、AmazonCloudFrontを使用して米国ユーザーに近いエッジロケーションにコンテンツのコピーをキャッシュすることです。</p>
+    <p>・2-新しいデータセンターを構築するには、かなりの費用がかかります。</p>
+    <p>・3-ドメイン名とレイテンシーの間に関係はありません。</p>
+    <p>・4-レイテンシーベースのルーティングはAmazonRoute 53の機能であり、AmazonConnectではありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第60問＞<br>あなたは、ECS上の複数のコンテナイメージ上でアプリケーションを開発していますが、マイクロアプリケーション同士の通信制御が複雑で管理しづらいと感じています。アプリケーションレベルの通信制御をサービスメッシュ基盤に移行する際に使用すべきサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. App Mesh</p>
+    <p class="plist">2. EKS</p>
+    <p class="plist">3. Amplify</p>
+    <p class="plist">4. App Runner</p>
+    <br>
+    <p>・1-Meshは、アプリケーションレベルの通信制御をサービスメッシュ基盤で実施できるサービスです。利用できるインフラストラクチャは、ECS、EC2、Fargate、EKS、Kubernetes</p>
+    <p>・2-EKSは、AWSで利用できるKubernetesのマネージドサービスです。</p>
+    <p>・3-Amplifyは、バックエンドの知識や経験が無くても簡単な操作でバックエンドを作成し、フロントエンドと接続できるサービスです。</p>
+    <p>・4-AWS App
+        Runnerは、コンテナ化されたウェブアプリケーションやAPIを開発者が簡単かつ迅速にデプロイできるフルマネージド型サービスです。大規模に、しかも事前のインフラ経験を必要とせずにデプロイすることができます。</p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第63問＞<br>システム管理チームは、アプリケーションをホストするAmazonEC2インスタンスの起動中に特定のカスタムスクリプトを1回だけ実行する必要があります。最小限の労力でこの要件を満たせる方法を選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. AWS CLIを使用して、インスタンスの起動中にユーザーデータスクリプトを1回だけ実行する。</p>
+    <p class="plist">2. EC2インスタンスでインスタンスメタデータスクリプトとしてカスタムスクリプトを実行する。</p>
+    <p class="plist">3. EC2インスタンスでユーザーデータスクリプトとしてカスタムスクリプトを実行する。</p>
+    <p class="plist">4. EC2インスタンス構成を変更して、ユーザーデータスクリプトとして追加されたカスタムスクリプトがブートプロセス中にのみ実行されるようにする。</p>
+    <br>
+    <p>・1-誤りです。</p>
+    <p>・2-インスタンスメタデータは、実行中のインスタンスを構成または管理するために使用できるインスタンスに関するデータです。メタデータを使用してカスタムスクリプトを実行することはできません。</p>
+    <p>・3-EC2でインスタンスを起動すると、一般的な自動構成タスクを実行したり、実行したりするために使用できるインスタンスにユーザーデータを渡すオプションがあります。EC2には、シェルスクリプトとcloud-initディレクティブの2種類のユーザーデータを渡すことができます。ユーザーデータスクリプトとcloud-initディレクティブは、インスタンスを最初に起動したときのブートサイクル中にのみ実行されます。したがって、ユーザーデータスクリプトにカスタムスクリプトを含める以外に、追加の構成は必要ありません。
+    </p>
+    <p>・4-構成を変更する必要はありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第64問＞<br>あなたのチームはAWS上でドキュメント管理アプリケーションを開発しています。このアプリケーションは、複数のアベイラビリティーゾーンのEC2インスタンスで実行されます。チームは、可用性が高く、要求されたらすぐにドキュメントを参照できるドキュメントストアが必要であると考えました。EBSを使用してドキュメントを保存するようにアプリケーションを構成しましたが、可用性要件を満たすために他の構成を検討する必要があります。次のうち適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. EBSボリュームのスナップショットを定期的に作成し、追加のアベイラビリティーゾーンでそれらのスナップショットを使用して新しいボリュームを構築する。</p>
+    <p class="plist">2. EBSをEC2インスタンスのルートボリュームとしてセットアップしてから、S3Glacierをドキュメントストアとして使用するようにアプリケーションを構成する。</p>
+    <p class="plist">3. EC2インスタンス用に少なくとも3つのプロビジョンドIOPS EBSボリュームを用意してから、それらのボリュームをRAID5構成のEC2インスタンスにマウントする。</p>
+    <p class="plist">4. EBSをEC2インスタンスのルートボリュームとしてセットアップしてから、S3をドキュメントストアとして使用するようにアプリケーションを構成する。</p>
+    <br>
+    <p>・1-この場合EBSがプライマリストレージとなります。スナップショットは増分バックアップであり、この構成だと可用性に欠けるため不適切です。</p>
+    <p>・2-リクエストされたらすぐにドキュメントを返す必要があるため不適切です。</p>
+    <p>・3-EBSにはRAID5およびRAID6は推奨されません。RAID 0構成よりも使用可能なIOPSが20〜30％少なくなります。したがって誤りです。</p>
+    <p>・4-ルートデバイスにAmazonEBSを使用するインスタンスには、AmazonEBSボリュームが自動的にアタッチされます。Amazon
+        EBSでバックアップされたインスタンスを起動すると、AWSは、使用するAMIによって参照されるAmazonEBSスナップショットごとにAmazonEBSボリュームを作成します。S3は高可用性であり、特定のユースケースにおいてドキュメントストアとして機能するように構成できます。
+    </p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

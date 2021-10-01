@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。このページでは、模擬試験の移行・移転分野の解答を掲載しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>移行・移転</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-9">
+    <h5>＜第10問＞<br>ある企業では、70TBの自社業務データを保存しているオンプレミスのファイルサーバーを所有しています。その業務データのバックアップ先としてS3
+        Glacierへのデータ移転を検討しています。企業のネットワーク回線の負担を減らしつつ、費用対効果の高い移転方法として適切なものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5><br>
+    <p class="plist">1.
+        S3へWebブラウザからファイルをアップロードする。S3上に移転されたデータをGlacierにアーカイブするライフサイクルポリシーを適用する。</p>
+    <p class="plist">2. VPNで企業のオンプレミスサーバとAWSを接続し、VPN経由でGlacierにデータをアップロードする。</p>
+    <p class="plist">3.
+        Snowballを利用してS3バケットへデータを移転し、S3上に移転されたデータをGlacierにアーカイブするライフサイクルポリシーを適用する。</p>
+    <p class="plist">4.
+        VPNで企業のオンプレミスサーバとAWSを接続し、VPN経由でGlacierにデータをアップロードする。S3上に移転されたデータをGlacierにアーカイブするライフサイクルポリシーを適用する。
+    </p><br>
+    <p>・1-企業のネットワーク回線の負担を軽減するという要件があるため、70TBのデータをインターネットやVPN経由で転送する選択肢は不正解です。</p>
+    <p>・2-企業のネットワーク回線の負担を軽減するという要件があるため、70TBのデータをインターネットやVPN経由で転送する選択肢は不正解です。</p>
+    <p>・3-Snowballは、S3へデータをすばやく一括転送します。接続制限、帯域幅の制約、ネットワーク接続コスト、レガシー環境に起因する問題などが存在する場合や、データの収集が遠隔地で行われる場合にデータを転送するのに役立ちます。snowballの容量は80TBです。
+    </p>
+    <p>・4-企業のネットワーク回線の負担を軽減するという要件があるため、70TBのデータをインターネットやVPN経由で転送する選択肢は不正解です。</p>
+</div>
+<div class="module text-left" "="" id=" module-16">
+    <h5>＜第17問＞<br>オンプレミスのストレージからAWSのストレージへと移行を計画しています。既存のストレージは複数台のオンプレミスサーバーから利用されることが多く、さらに高いI/O性能が求められるため、EFSを利用することとしました。EFSへファイルデータを効率的かつ高速に移動するために利用するべきサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. DataSync</p>
+    <p class="plist">2. AWS Backup</p>
+    <p class="plist">3. Storage Gateway</p>
+    <p class="plist">4. SMS</p><br>
+    <p>・1-DataSyncは、オンプレミスストレージとEFS間でデータを迅速かつ簡単に移動することができるマネージド型のデータ転送サービスです。オープンソースツールと比較すると最大10倍の速度で、AWS Direct
+        Connectまたはインターネット経由で転送可能です。</p>
+    <p>・2-AWS バックアップはEFS ファイルシステムの中央管理とバックアップの自動化が簡単にできるフルマネージド型のバックアップサービスです。EFSのデータ移行には利用できません。</p>
+    <p>・3-Storage Gatewayもオンプレミスからのデータ連携が可能ですが、EFSへの移行は対応していません。対応しているのは、S3、S3 Glacier、S3 Glacier Deep Archive、FSx
+        for Windows、EBS、AWS Backupなどです。</p>
+    <p>・4-Server Migration Serviceは、オンプレミスの
+        VMwareのvSphere、MicrosoftのHyper-V/SCVMM、Azure仮想マシンのAWSへの移行を自動化します。EFSのデータ移行には利用できません。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>IAM・マネジメント</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-12">
+    <h5>＜第13問＞<br>IAMユーザ新規作成時のデフォルト権限について正しいものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. 全ての権限が付与されているため、権限を変更する必要がある。</p>
+    <p class="plist">2. 何の権限も付与されていない。</p>
+    <p class="plist">3. IAMの閲覧権限のみ付与される。</p>
+    <p class="plist">4. CloudWatchの閲覧権限のみ付与される。</p><br>
+    <p>・1-IAMユーザ新規作成時のデフォルト権限では、何の権限も付与されていません。</p>
+    <p>・2-IAMユーザ新規作成時のデフォルト権限では、何の権限も付与されていません。</p>
+    <p>・3-IAMユーザ新規作成時のデフォルト権限では、何の権限も付与されていません。</p>
+    <p>・4-IAMユーザ新規作成時のデフォルト権限では、何の権限も付与されていません。</p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第23問＞<br>EC2ローンチタイプを使用するECSコンテナインスタンス上で実行されるアプリケーションは、Amazon
+        DynamoDBにデータを書き込むためのパーミッションを必要とします。アプリケーションを実行している特定のECSタスクにのみ、これらのパーミッションを割り当てるにはどうすればよいでしょうか。 </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. セキュリティーグループを使用してDynamoDBへのアウトバウンド接続を許可し、それをコンテナインスタンスに割り当てる。</p>
+    <p class="plist">2. DynamoDBへのアクセス許可を持つIAMポリシーを作成し、taskRoleArnパラメーターを使用してタスクに割り当てる。</p>
+    <p class="plist">3. DynamoDBへのアクセス許可を持つIAMポリシーを作成し、コンテナインスタンスにアタッチする。</p>
+    <p class="plist">4. ECSTaskExecutionRolePolicyを変更して、DynamoDBのパーミッションを追加する。</p>
+    <br>
+    <p>・1-DynamoDBへのアウトバウンド接続を許可するにはセキュリティグループが必要ですが、問題はDynamoDBにデータを書き込むためのアクセス許可を割り当てる方法を尋ねることであり、セキュリティグループはそれらのアクセス許可を提供できません。
+    </p>
+    <p>・2-Amazon ECSで特定のタスクのパーミッションを指定するには、IAM Roles for Tasksを使用する必要があります。</p>
+    <p>・3-この場合権限は、インスタンスで実行されているすべてのタスクとインスタンス自体に適用されます。</p>
+    <p>・4-これは、コンテナエージェントがコンテナイメージのプル、ログファイルの書き込みなどを行うために使用します。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第44問＞<br>小売企業は、AWS上でITインフラストラクチャを管理しています。同社は、AWSアカウントを発行し、EC2インスタンスやRDSデータベースなどのリソースを使用する複数の部門を管理するためにAWS管理組織を設立しました。同社は、集中管理されたVPCをすべての部門に提供したいと考えています。次のうち適切なものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. VPCピアリングを使用して、AWS Organizationsの同じ親組織に属する他のAWSアカウントとVPCを共有する。</p>
+    <p class="plist">2. VPCピアリングを使用して、AWS Organizationsの同じ親組織に属する他のAWSアカウントと１つ以上のサブネットを共有する。</p>
+    <p class="plist">3. VPC共有を使用して、AWS Organizationsの同じ親組織に属する他のAWSアカウントと1つ以上のサブネットを共有する。</p>
+    <p class="plist">4. VPC共有を使用して、AWS Organizationsの同じ親組織に属する他のAWSアカウントとVPCを共有する。</p>
+    <br>
+    <p>・1-VPCピアリングは、集中管理されたVPCを提供できません。さらに、AWSオーナーアカウントはVPC自体を別のAWSアカウントと共有することはできません。したがって、正しくありません。</p>
+    <p>・2-VPCピアリングは、集中管理されたVPCを提供できません。したがって、正しくありません。</p>
+    <p>・3-VPC共有を使用すると、複数のAWSアカウントでEC2インスタンス、RDSデータベース、Redshiftクラスター、Lambda関数などのアプリケーションリソースを共有および集中管理されたAmazon
+        Virtual Private Cloud（VPC）に作成できます。</p>
+    <p>・4-VPCを所有するアカウントは、同じ組織に属する他のアカウントと1つ以上のサブネットを共有しますが、所有者アカウントはVPC自体を共有できません。したがって、正しくありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第49問＞<br>あなたの組織には、AWSクラウドインフラストラクチャを運用する多数のエンジニアがいます。あなたは、チームを編成し、各チームに適切なアクセス許可を割り当てたいと考えています。その際利用すべきサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. IAM ユーザー</p>
+    <p class="plist">2. AWS Organizations</p>
+    <p class="plist">3. IAM ロール</p>
+    <p class="plist">4. IAM グループ</p>
+    <br>
+    <p>・1-IAMユーザーは、AWS Management Consoleにアクセスするために、ルートユーザーから払い出されるユーザーアカウントです。</p>
+    <p>・2-AWS Organizationsは、IAMユーザー（従業員）ではなく、AWSアカウントをグループ化するために使用します。</p>
+    <p>・3-AMロールは、特定のアクセス許可を持つアカウントで作成できるIAMIDです。</p>
+    <p>・4-IAMグループは、1つの単位として管理されるIAMユーザーのコレクションです。グループを使用すると、複数のユーザーのアクセス許可を管理できます。これにより、それらのユーザーのアクセス許可を簡単に管理できます。
+    </p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第53問＞<br>AWS共有責任モデルに関して正しいものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. IaasサービスのセキュリティはAWSの責任である。</p>
+    <p class="plist">2. 責任範囲は使用するサービスによって異なる。</p>
+    <p class="plist">3. ゲストOSへのパッチ適用は常にAWSの責任である。</p>
+    <p class="plist">4. マネージドサービスのセキュリティはユーザーの責任である。</p>
+    <br>
+    <p>・1-サービスとしてのインフラストラクチャ（IaaS）であるAWS製品は完全にユーザーの管理下にあり、必要なすべてのセキュリティ構成および管理タスクはユーザーが実行する必要があります。</p>
+    <p>・2-選択したAWSサービスによって責任が異なる場合があります。</p>
+    <p>・3-ゲストOSへのパッチ適用は、マネージドサービス（Amazon RDSなど）に対してのみAWSが責任を負います。ユーザーは、他のサービス（Amazon
+        EC2など）のゲストOSにパッチを適用する責任があります。AWSは、基盤となるホストにパッチを適用し、ファームウェアをアップグレードし、AmazonEC2を含むすべてのサービスのインフラストラクチャ内の欠陥を修正する責任があります。
+    </p>
+    <p>・4-AWSは、マネージドサービスのセキュリティ構成を担当します。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

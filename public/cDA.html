@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。このページでは、模擬試験のデータ・アナリティクス分野の解答を掲載しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>データ・アナリティクス</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-0">
+    <h5>＜第21問＞<br>あなたの会社のデータサイエンティストは、リアルタイムのストリーミングデータを処理・分析できるサービスを探しています。ストリーミングデータの問い合わせには、標準的なSQLクエリを使用したいと考えています。これらの要件を満たすのは、どのAWSサービスの組み合わせでしょうか。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. ElastiCache + EMR</p>
+    <p class="plist">2. Kinesis Data Stream + Kinesis Data Analytics</p>
+    <p class="plist">3. DynamoDB + EMR</p>
+    <p class="plist">4. Kinesis Data Stream + Kinesis Data Firehose</p>
+    <br>
+    <p>・1-ElastiCacheはインメモリデータベースのキャッシュサービスであり、ストリーミングデータには使用されないため、ElastiCache + EMRは誤りです。EMR（Elastic Map
+        Reduce）はホスト型のHadoopフレームワークであり、ストリーミングデータの分析には使用されません。</p>
+    <p>・2-Amazon Kinesis Data Analyticsは、リアルタイムのストリーミングデータを処理・分析する最も簡単な方法です。Kinesis Data
+        Analyticsは、標準的なSQLクエリを使用してKinesisデータストリームを処理し、Kinesis StreamsやKinesis Firehoseからデータを取り込むことができます。</p>
+    <p>・3-DynamoDB + EMRは誤りです。DynamoDBはNoSQLデータベースで、ストリームからのデータの保存には使用できますが、データの処理や分析、SQLクエリでの問い合わせには使用できません。Elastic
+        Map Reduce（EMR）はホスト型のHadoopフレームワークで、ストリーミングデータの分析には使用できません。</p>
+    <p>・4-Kinesis Data Streams + Kinesis Firehoseは誤りです。FirehoseはSQLクエリの実行には使用できません。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第24問＞<br>新しいアプリケーションのWebサイトには、毎秒約5万件のリクエストがあり、同社は複数のアプリケーションを使用して、Webサイト上のユーザーのナビゲーションパターンを分析し、ユーザーエクスペリエンスをパーソナライズできるようにしたいと考えています。Webサイトのページクリック数を収集し、ユーザーごとに順次処理するために、次のうちどのサービスを選択すべきですか。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. SQS 標準キュー</p>
+    <p class="plist">2. Kinesis Data Stream</p>
+    <p class="plist">3. SQS FIFOキュー</p>
+    <p class="plist">4. CloudTrail</p>
+    <br>
+    <p>・1-標準のSQSキューは、メッセージが順番に処理されることを保証せず、FIFOSQSキューは1秒間に必要なトランザクション数にスケーリングしません。</p>
+    <p>・2-Amazon Kinesisストリームでは、1秒あたり最大1
+        MiBのデータ、またはシャードあたりの書き込みで1秒あたり1,000レコードが許可されます。シャードの数に制限はないため、KinesisStreamsを簡単にスケーリングして1秒あたり50,000を受け入れることができます。
+    </p>
+    <p>・3-SQSはデータのストリーミングに最適ではありません。この問題の場合にはKinesisがより優れたソリューションとなります。</p>
+    <p>・4-CloudTrailは監査に使用されるため、ここでは役に立ちません。</p>
+</div>
+<div class="module text-left" "="" id=" module-0">
+    <h5>＜第26問＞<br>外部のWebサイトで動作するアプリケーションが、Amazon API
+        GatewayへのAPIコールを使用して、貴社のWebサイトへのリクエストを開始しようとしています。その際、次のようなエラーが発生してリクエストが失敗するという問題が報告されています。"Cross-Origin
+        Request Blocked: The Same Origin Policy disallows reading the remote
+        resource"あなたは問題を解決するように求められています。最も可能性の高い解決策を選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. APIのACLを変更する。</p>
+    <p class="plist">2. IAMポリシーがAPIアクセスを許可していないため変更する。</p>
+    <p class="plist">3. API gatewayで選択したメソッドを使用して、APIリソースでCORSを有効にする。</p>
+    <p class="plist">4. リクエストがSSL/TLSで保護されていないため、変更する。</p>
+    <br>
+    <p>・1-不正解です。</p>
+    <p>・2-不正解です。</p>
+    <p>・3-CORSをサポートするには、REST
+        APIリソースは、少なくともFetch標準で義務付けられている次の応答ヘッダーを使用してOPTIONSプリフライト要求に応答できるOPTIONSメソッドを実装する必要があります。Access-Control-Allow-Methods、Access-Control-Allow-Headers、Access-Control-Allow-Origin。
+    </p>
+    <p>・4-不正解です。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第35問＞<br>ある調査会社は、Amazon
+        S3でデータレイクソリューションを運用し、巨大なデータセットを分析しています。このソリューションにおいて、SQLクエリは低頻度で行われます。同社はインフラストラクチャのコストを最小限に抑えたいと考えています。これらの要件を満たすサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">1</font>
+    </h5>
+    <br>
+    <p class="plist">1. Athena</p>
+    <p class="plist">2. Aurora</p>
+    <p class="plist">3. Redshift Spectrum</p>
+    <p class="plist">4. RDS for MySQL</p>
+    <br>
+    <p>・1-Amazon
+        Athenaは、標準SQLを使用してAmazonS3のデータを簡単に分析できるインタラクティブなクエリサービスです。Athenaはサーバーレスであるため、管理するインフラストラクチャはなく、実行するクエリに対してのみ料金を支払います。これにより、頻度の低いクエリのインフラストラクチャコストを最小限に抑えるという要件が満たされます。
+    </p>
+    <p>・2-Amazon RDSとAuroraは、S3でデータセットを分析するのに適したソリューションではありません。</p>
+    <p>・3-Amazon RedShift Spectrumは、Amazon
+        Redshiftの機能であり、ロードやETLを必要とせずに、AmazonS3の非構造化データのエクサバイトに対してクエリを実行できます。ただし、RedShiftノードはEC2インスタンスで実行されるため、クエリの頻度が低い場合、インフラストラクチャのコストを最小限に抑えることはできません。
+    </p>
+    <p>・4-Amazon RDSとAuroraは、S3でデータセットを分析するのに適したソリューションではありません。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第65問＞<br>ビッグデータ分析企業は、データをS3ベースのデータレイクからRedshiftクラスターに移行および変換する毎日のETLプロセスを最適化したいと考えています。サーバーレス環境でこの日常業務を管理するのに最適なAWSサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. DMS</p>
+    <p class="plist">2. Data Pipeline</p>
+    <p class="plist">3. Glue</p>
+    <p class="plist">4. EMR</p>
+    <br>
+    <p>・1-DMSは、データベースをAWSに簡単かつ安全に移行するのに役立ちます。オンプレミスからAWSへのデータベースの移行、またはオンプレミスのソースとAWSのソース間のデータベースレプリケーションが必要なユースケースに適します。設問ではAWSサービス間のデータ移行と変換が要件となっているため不適切です。
+    </p>
+    <p>・2-このオプションは基盤となるEC2インスタンスを必要とするため、サーバーレスソリューションではありません。</p>
+    <p>・3-Glueは、サーバーレスApacheSpark環境で実行されるマネージドETLサービスを提供します。これにより、基盤となるコンピューティングリソースの構成と管理について心配することなく、ETLジョブに集中できます。
+    </p>
+    <p>・4-EMRは、膨大な量のデータを簡単かつコスト効率よく処理するためのWebサービスです。基盤となるEC2インスタンスを必要とするため、サーバーレスソリューションではありません。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

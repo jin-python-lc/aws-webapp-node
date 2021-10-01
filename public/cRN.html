@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AWS認定ソリューションアーキテクトアソシエイト(AWS SAA) の模擬試験を無料で掲載しています。本試験レベルの難易度の問題を多数掲載しています。AWS認定資格の勉強に役立つので、練習問題や模擬試験、問題集を無料で学習したい方はぜひご活用ください。問題は全てSAA-C02版に対応しています。" />
+    <meta name="author" content="Taito Jin" />
+    <title>【SAA-C02 無料 模擬試験】AWS認定ソリューションアーキテクト-アソシエイト模擬試験</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+    <script data-ad-client="ca-pub-2980328286670067" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-nav static-top">
+        <div class="container">
+            <a class="navbar-brands" href="./index.html">AWS-SAA模擬試験</a>
+            <div class="container-right">
+                <a class="btn btn-aws" href="./descriptions.html">解説まとめ</a>
+                <a class="btn btn-aws" href="./resultindex.html">履歴</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead2">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-white">
+                        <!-- Page heading-->
+                        <div id="score" class="text-white text-center navbar-text-bottom">
+                            <h1>試験1 - 分野別</h1>
+                            <h2>運用</h2>
+                        </div>
+
+                        <div class="text-white" id="resultcontent">
+				<div class="module text-left" "="" id=" module-1">
+    <h5>＜第27問＞<br>ウェブサイトは、AmazonCloudFrontディストリビューションのオリジンとして機能するApplicationLoad
+        Balancer（ALB）の背後にあるAutoScalingグループのAmazonEC2インスタンスで実行されます。SQLインジェクション攻撃から保護するために、AWS
+        WAFを使用しています。セキュリティログを確認したところ、Webサイトへのアクセスをブロックする必要がある外部の悪意のあるIPが明らかになりました。アプリケーションを保護するために必要な設定を選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. ALBの背後にあるターゲットグループのEC2インスタンスのネットワークACLを変更して、悪意のあるIPアドレスを拒否する。</p>
+    <p class="plist">2. WAFの設定を変更して、悪意のあるIPアドレスをブロックするIP一致条件を追加する。</p>
+    <p class="plist">3. ALBの背後にあるターゲットグループのEC2インスタンスのセキュリティグループを変更して、悪意のあるIPアドレスを拒否する。</p>
+    <p class="plist">4. CloudFrontディストリビューションのネットワークACLを変更して、悪意のあるIPアドレスの拒否ルールを追加する。</p>
+    <br>
+    <p>・1-EC2インスタンスのサブネット内のデータ送信元IPアドレスは、ELBのIPアドレスとなるため誤りです。</p>
+    <p>・2-AWSWAFクラシックでは「IP一致条件」を作成し、2019年バージョンのAWS WAFでは「IPセット一致ステートメント」を作成します。IP一致条件/
+        IPセット一致ステートメントは、一連のIPアドレスとアドレス範囲に対してWeb要求の発信元のIPアドレスを検査します。これを使用して、要求の発信元のIPアドレスに基づいてWeb要求を許可またはブロックします。</p>
+    <p>・3-セキュリティーグループで特定のIPアドレスを拒否することはできません。</p>
+    <p>・4-CloudFrontはサブネットの中に無いため、ネットワークACLは適用されません。</p>
+</div>
+<div class="module text-left" "="" id=" module-2">
+    <h5>＜第38問＞<br>あなたの会社では、AWS上でアプリケーションを運用しています。あなたはAWSサービスごとにコストを可視化して分析する環境構築を任されました。利用すべきサービスを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. Consolidated Billing</p>
+    <p class="plist">2. Athena</p>
+    <p class="plist">3. Cost Explorer</p>
+    <p class="plist">4. Budgets</p>
+    <br>
+    <p>・1-Consolidated Billingは、AWSの契約アカウントをまとめて１つの支払いにすることができるサービスです。</p>
+    <p>・2-Amazon Athenaは、標準的なSQLを使用してAmazon S3内のデータを直接分析することを容易にするインタラクティブなクエリサービスです。</p>
+    <p>・3-Cost Explorerは、コストと使用状況の詳細を表示および分析するために使用できるツールです。</p>
+    <p>・4-AWS Budgetsは、予算を設定して、コストまたは使用量が予算額や予算量を超えたときにアラートを発信できるサービスです。</p>
+</div>
+<div class="module text-left" "="" id=" module-1">
+    <h5>＜第47問＞<br>ある企業は、AWS
+        GlueとLambdaを使用してS3ベースのデータレイクでデータを処理するワークフローを管理するためのオーケストレーションソリューションを探しています。ソリューションアーキテクトとして、次のAWSサービスのうち、このケースにおいて開発努力が最も少なくなるものを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. Batch</p>
+    <p class="plist">2. EMR</p>
+    <p class="plist">3. Simple Workflow Service (SWF)</p>
+    <p class="plist">4. Step Function</p>
+    <br>
+    <p>・1-Batchは、AWSで数十万のバッチコンピューティングジョブを簡単かつ効率的に実行できるようにするバッチ管理機能のセットです。Batchを使用してワークフローを調整することはできないため、これは正しくないオプションです。
+    </p>
+    <p>・2-EMRは、Apache Spark、Apache Hive、Apache HBase、Apache Flink、Apache
+        Hudi、Prestoなどのオープンソースツールを使用して大量のデータを処理するための業界をリードするクラウドビッグデータプラットフォームです。EMRを使用してワークフローを調整することはできないため誤りです。
+    </p>
+    <p>・3-SWFは、開発者が並列または順次の行程を持つバックグラウンドジョブを構築、実行、およびスケーリングするのに役立ちます。SWFを使用すると、オーケストレーションロジックを完全に制御できますが、アプリケーションの開発が複雑になります。したがって誤りです。
+    </p>
+    <p>・4-AWS Step Functionsを使用すると、LambdaやGlueなどの複数のAWSサービスをサーバーレスワークフローに調整および調整できます。ステップ関数は、Glue
+        ETLジョブとラムダ関数が順番に実行され、指定されたユースケースで定義されたワークフローに従って正常に完了することを保証できます。したがって、ステップ関数が最適なソリューションです。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第50問＞<br>次のサービスのうち、AWSサービス利用者がAWSとの契約を管理できるものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. AWS Certificate Manager</p>
+    <p class="plist">2. AWS Systems Manager</p>
+    <p class="plist">3. AWS Organizations</p>
+    <p class="plist">4. AWS Artifact</p>
+    <br>
+    <p>・1-AWS Certificate
+        Managerは、AWSサービスおよび内部接続リソースで使用するためのパブリックおよびプライベートのSSL/TLS証明書を簡単にプロビジョニング、管理、およびデプロイできるサービスです。</p>
+    <p>・2-AWS Systems Managerは、AWSのインフラストラクチャの可視性と制御を提供します。</p>
+    <p>・3-AWS Organizationsは、複数のAWSアカウントにわたって一元的なガバナンスと管理を提供します。</p>
+    <p>・4-AWS Artifactは、AWSのコンプライアンスドキュメントとAWS契約へのオンデマンドアクセスを顧客に提供するセルフサービスの監査アーティファクト検索ポータルです。AWS Artifact
+        Agreementsを使用して、Business Associate Addendum（BAA）などのAWS契約のステータスを確認、承認、追跡できます。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第54問＞<br>脆弱性をチェックするためにEC2インスタンスのネットワーク評価を自動で実行するAWSサービスを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">3</font>
+    </h5>
+    <br>
+    <p class="plist">1. ACL</p>
+    <p class="plist">2. Kinesis</p>
+    <p class="plist">3. Inspector</p>
+    <p class="plist">4. セキュリティーグループ</p>
+    <br>
+    <p>・1-ACLを使用することで、EC2インスタンスのネットワークアクセスの可能性をサブネットレベルで確認できますが、これは自動的には行われません。</p>
+    <p>・2-Amazon Kinesisを使用すると、ビデオおよびデータストリームをリアルタイムで収集、処理、分析できます。</p>
+    <p>・3-Amazon
+        Inspectorは、EC2インスタンスのネットワークアクセシビリティと、インスタンスで実行されているアプリケーションのセキュリティ状態をテストするのに役立つ自動セキュリティ評価サービスです。Amazon
+        Inspectorを使用すると、評価テンプレートを作成して、開発およびデプロイのパイプライン全体または静的な本番システムのセキュリティ脆弱性評価を自動化できます。</p>
+    <p>・4-セキュリティグループを使用して、EC2インスタンスのネットワークアクセス可能性をインスタンスレベルで確認できますが、これは自動的には行われません。</p>
+</div>
+<div class="module text-left" "="" id=" module-4">
+    <h5>＜第55問＞<br>次のサービスのうち、企業がAWSのコンプライアンスを確保するのに役立つのはどれですか？</h5>
+    <br>
+    <h5>答え：<font color="red">4</font>
+    </h5>
+    <br>
+    <p class="plist">1. CloudFront</p>
+    <p class="plist">2. CloudEndure Migration</p>
+    <p class="plist">3. CloudWatch</p>
+    <p class="plist">4. CloudTrail</p>
+    <br>
+    <p>・1-Amazon CloudFrontは、コンテンツ配信ネットワーク（CDN）サービスです。</p>
+    <p>・2-Migrationは、物理、仮想、およびクラウドベースのインフラストラクチャからアプリケーションを移行するプロセスを簡素化し、互換性の問題なしにAWSリージョンで完全に機能することを保証します。</p>
+    <p>・3-Amazon CloudWatchは、AWSリソースの使用率を監視するために使用されます。</p>
+    <p>・4-AWS CloudTrailは、AWSアカウントで実行されたすべてのアクションをログに記録するように設計されています。</p>
+</div>
+<div class="module text-left" "="" id=" module-1">
+    <h5>＜第57問＞<br>AWS Well-ArchitectedFrameworkのオペレーショナルエクセレンスの柱を最もよく表しているものを選択してください。</h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. 要件を満たすためのコンピューティングリソースの効率的な使用。</p>
+    <p class="plist">2. システムを監視し、サポートするプロセスと手順を改善する機能。</p>
+    <p class="plist">3. データセンターの運用をより効率的に管理する機能。</p>
+    <p class="plist">4. 障害から適切に回復するシステムの機能。</p>
+    <br>
+    <p>・1-信頼性の柱についての説明のため誤りです。</p>
+    <p>・2-オペレーショナルエクセレンスの柱についての説明に適しています。</p>
+    <p>・3-パフォーマンス効率の柱についての説明のため誤りです。</p>
+    <p>・4-誤りです。</p>
+</div>
+<div class="module text-left" "="" id=" module-3">
+    <h5>＜第59問＞<br>あなたは、複数のAWSコンポーネントとサービスで構成されるアプリケーションを運用しています。このアプリケーションを構成する全てのコンポーネントとサービスにおけるリクエストやレイテンシを確認・トレースできるようにしたいと考えています。適切なサービスを選択してください。
+    </h5>
+    <br>
+    <h5>答え：<font color="red">2</font>
+    </h5>
+    <br>
+    <p class="plist">1. CloudWatch</p>
+    <p class="plist">2. X-Ray</p>
+    <p class="plist">3. CloudWatch Logs</p>
+    <p class="plist">4. CloudWatch Events</p>
+    <br>
+    <p>・1-CloudWatchは、AWS上で稼働する様々なシステムやリソースのログを収集・監視・可視化するサービスです。設問ではサービスの監視要件も含まれるため誤りです。</p>
+    <p>・2-X-Rayを利用することでアプリケーションを構成する全てのコンポーネントとサービスにおけるリクエストやレイテンシを確認・トレースできます。</p>
+    <p>・3-CloudWatch Logsは、CloudTrailやVPCフローログなどの様々なAWSのログを統合的に収集するサービスです。個々のログ確認しかできないため、トレースは不可能です。レイテンシも確認できません。
+    </p>
+    <p>・4-CloudWatch Evantsは、APIイベントでトリガーするルールを作成し、何らかのアクションを行うためのサービスです。</p>
+</div>
+                            
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="justify-content-center">
+                        <button class="btn-aws" onclick="location.href='#score'">TOPへ</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Footer-->
+    <footer class="footer bg-light masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-center my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="./about.html">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./user.html">User Policy</a></li>
+			<li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="./information.html">Information</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Jin 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
