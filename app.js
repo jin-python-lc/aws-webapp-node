@@ -291,7 +291,7 @@ app.post("/create-checkout-session", async (req, res) => {
 	}
 })
 
-app.get('/checkout1122334455', async (req, res) => {
+app.get('/checkout**************', async (req, res) => {
 	if (req.session.user) {
 		UserModel.updateOne({ email: `${req.session.user.email}` }, { $set: { payment: 'true' } }, { upsert: false }, function (err) {
 			if (err) {
