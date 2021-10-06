@@ -282,7 +282,7 @@ app.post("/create-checkout-session", async (req, res) => {
 				}
 			}),
 			//success_url: `http://localhost:3000/success.html?session_id={CHECKOUT_SESSION_ID}`,
-			success_url: 'http://localhost:3000/checkout1122334455',
+			success_url: 'http://localhost:3000/checkout**************',
 			cancel_url: 'http://localhost:3000/login',
 		})
 		res.json({ url: session.url })
